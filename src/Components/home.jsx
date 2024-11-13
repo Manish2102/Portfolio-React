@@ -8,6 +8,7 @@ import './navbar.css';
 import './tools.css';
 import './experiences.css';
 import './contact.css';
+import './Projects.css';
 
 function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
