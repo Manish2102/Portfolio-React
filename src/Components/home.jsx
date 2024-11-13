@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import { FaAws, FaReact, FaPython, FaGithub, FaHtml5, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaAws, FaReact, FaPython, FaGithub, FaHtml5, FaLinkedin} from 'react-icons/fa';
 import { BiLogoFlutter, BiLogoFlask } from "react-icons/bi";
 import { IoLogoCss3 } from "react-icons/io";
+import { FaXTwitter } from "react-icons/fa6";
+
 import { Link } from 'react-scroll';  // Import Link from react-scroll
 import './home.css';
 import './navbar.css';
@@ -57,11 +59,10 @@ function Home() {
           <img src="portfolio.svg" alt="Profile" />
         </div>
         <h1>
-          Hey There <span>I code</span> and make content <span>about it!</span>
+          Hey There <span>I'm Manish </span>I code and make <span>Things easier</span>
         </h1>
         <p>
-          I am a seasoned full-stack software engineer with over 8 years of professional experience, specializing in backend development.
-          My expertise lies in crafting robust and scalable SaaS-based architectures on the Amazon AWS platform.
+         I’m a software developer skilled in mobile and web development, with experience in building real-time systems for workplace safety, creating dynamic Flutter apps, and developing with React. I’m passionate about practical tech innovations and skilled in automation and data extraction.
         </p>
         <div className="buttons">
           <button className="button">Get In Touch</button>
@@ -162,7 +163,7 @@ function Home() {
             <FaGithub size={30} />
           </a>
           <a href="https://twitter.com/your-twitter" target="_blank" rel="noopener noreferrer">
-            <FaTwitter size={30} />
+            <FaXTwitter size={30} />
           </a>
         </div>
       </div>
