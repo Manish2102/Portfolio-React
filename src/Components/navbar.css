@@ -8,25 +8,18 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  /* Center the navbar horizontally */
   width: 90%;
-  /* Limit the width to 90% of the screen */
   max-width: 1000px;
-  /* Set a maximum width */
   margin: 20px auto;
-  /* Vertical margin */
   background: rgba(255, 255, 255, 0.5);
-  /* Transparent background */
   border-radius: 20px;
-  /* Rounded corners */
   backdrop-filter: blur(30px);
-  /* Blur effect for background */
   color: black;
   font-size: 1.2em;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  /* Soft shadow */
 }
 
+/* Logo styles */
 .navbar-logo {
   display: flex;
   align-items: center;
@@ -38,23 +31,38 @@
   margin-right: 10px; /* Space between the image and text */
 }
 
+/* Navbar links */
 .navbar-links {
   display: flex;
   gap: 20px;
   list-style: none;
 }
 
+/* Navbar link item */
 .navbar-links li {
   cursor: pointer;
   transition: color 0.3s;
 }
 
+/* Hover effect for links */
 .navbar-links li:hover {
   color: #555;
-  /* Hover color for links */
 }
 
-/* Responsive adjustments */
+/* Hamburger icon and mobile adjustments */
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-icon {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+/* Responsive adjustments for small screens */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -62,7 +70,24 @@
   }
 
   .navbar-links {
+    display: none;  /* Initially hide navbar links */
     flex-direction: column;
     gap: 10px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-links.active {
+    display: flex;  /* Show links when menu is active */
+  }
+
+  .navbar-toggle {
+    display: block;  /* Show hamburger icon */
   }
 }

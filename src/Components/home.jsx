@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaAws, FaReact, FaPython, FaGithub, FaHtml5, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { BiLogoFlutter, BiLogoFlask } from "react-icons/bi";
 import { IoLogoCss3 } from "react-icons/io";
@@ -10,6 +10,12 @@ import './experiences.css';
 import './contact.css';
 
 function Home() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div className="home-page">
       {/* Navbar */}
@@ -17,7 +23,10 @@ function Home() {
         <div className="navbar-logo">
           <img src="Manishyadav.svg" alt="Logo" className="logo-image" />
         </div>
-        <ul className="navbar-links">
+        <div className="navbar-toggle" onClick={toggleMenu}>
+          <div className="hamburger-icon"></div>
+        </div>
+        <ul className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
           <li>
             <Link to="home-section" smooth={true} duration={500}>
               Home
@@ -156,7 +165,6 @@ function Home() {
           </a>
         </div>
       </div>
-
     </div>
   );
 }
