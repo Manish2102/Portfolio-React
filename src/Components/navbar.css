@@ -1,0 +1,68 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 80px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  /* Center the navbar horizontally */
+  width: 90%;
+  /* Limit the width to 90% of the screen */
+  max-width: 1000px;
+  /* Set a maximum width */
+  margin: 20px auto;
+  /* Vertical margin */
+  background: rgba(255, 255, 255, 0.5);
+  /* Transparent background */
+  border-radius: 20px;
+  /* Rounded corners */
+  backdrop-filter: blur(30px);
+  /* Blur effect for background */
+  color: black;
+  font-size: 1.2em;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  /* Soft shadow */
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 80px;  /* Adjusted size */
+  height: 80px; /* Adjusted size */
+  margin-right: 10px; /* Space between the image and text */
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.navbar-links li {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navbar-links li:hover {
+  color: #555;
+  /* Hover color for links */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

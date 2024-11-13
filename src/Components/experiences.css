@@ -1,0 +1,72 @@
+/* Experience Section */
+.experiences-section {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the content horizontally */
+    justify-content: center; /* Ensures everything is centered vertically */
+  }
+  
+  .experiences-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333; /* Optional: Set a color for the heading */
+    text-align: center; /* Center the text */
+    width: 100%; /* Ensures the heading takes up the full width */
+    display: flex;
+    justify-content: center; /* Centers the heading text */
+  }
+  
+  /* Experience Card Styling */
+  .experience-card {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0; /* Add space between the card and the section title */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.5s ease;
+    cursor: pointer;
+    max-width: 350px; /* Slightly larger max width */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border: 2px solid white; /* Add a white border */
+  }
+  
+  .experience-card:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+    background: linear-gradient(135deg, rgba(255, 0, 150, 0.4), rgba(0, 204, 255, 0.4)); /* RGB background transition */
+  }
+  
+  /* Info Section Inside Card */
+  .experience-info p {
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .experience-info strong {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .experience-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #FF6347; /* Optional: Set a color for the company name */
+  }
+  
+  .experience-card .experience-info {
+    padding: 10px;
+  }
+  
+  /* Center the cards within the experience section */
+  .experiences-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  

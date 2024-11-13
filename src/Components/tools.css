@@ -1,0 +1,41 @@
+/* Tools and Technologies*/
+
+.experience-section {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .icon-box {
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .icon-box h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+  
+  .icon-box:hover {
+    transform: translateY(-10px);
+    /* Moves the icon upwards */
+  }
+  
+  .icon-box svg {
+    color: #333;
+    /* Set a color for the icons */
+    transition: color 0.3s ease;
+  }
+  
+  .icon-box:hover svg {
+    color: #0073e6;
+    /* Changes the icon color on hover */
+  }
+  
