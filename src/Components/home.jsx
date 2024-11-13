@@ -2,7 +2,7 @@ import React from 'react';
 import { FaAws, FaReact, FaPython, FaGithub, FaHtml5, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { BiLogoFlutter, BiLogoFlask } from "react-icons/bi";
 import { IoLogoCss3 } from "react-icons/io";
-// Importing icons from react-icons
+import { Link } from 'react-scroll';  // Import Link from react-scroll
 import './home.css';
 import './navbar.css';
 import './tools.css';
@@ -18,15 +18,31 @@ function Home() {
           <img src="Manishyadav.svg" alt="Logo" className="logo-image" />
         </div>
         <ul className="navbar-links">
-          <li>Home</li>
-          <li>Projects</li>
-          <li>Experience</li>
-          <li>Contact</li>
+          <li>
+            <Link to="home-section" smooth={true} duration={500}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="projects-section" smooth={true} duration={500}>
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link to="experiences-section" smooth={true} duration={500}>
+              Experience
+            </Link>
+          </li>
+          <li>
+            <Link to="contact-section" smooth={true} duration={500}>
+              Contact
+            </Link>
+          </li>
         </ul>
       </nav>
 
       {/* Home Section */}
-      <div className="home-content">
+      <div className="home-content" id="home-section">
         <div className="profile-picture">
           <img src="portfolio.svg" alt="Profile" />
         </div>
@@ -44,7 +60,7 @@ function Home() {
       </div>
 
       {/* Tools and Technologies */}
-      <div className="experience-section">
+      <div className="experience-section" id="projects-section">
         <h2>Tools & Technologies</h2>
         <div className="icon-container">
           <div className="icon-box">
@@ -81,14 +97,14 @@ function Home() {
           </div>
         </div>
       </div>
+
       {/* Projects Section */}
-      <div className="projects-section">
+      <div className="projects-section" id="projects-section">
         <h2>Projects</h2>
         <div className="projects-container">
           <div className="experience-card">
             <div className="experience-info">
-              <h3>Vectorization and Validation
-              </h3>
+              <h3>Vectorization and Validation</h3>
               <p>Developed a system for storing text embeddings in a vector database for efficient retrieval.</p>
               <p>Applied cosine similarity and Euclidean distance for accurate, query-based matching.</p>
             </div>
@@ -96,14 +112,12 @@ function Home() {
           <div className="experience-card">
             <div className="experience-info">
               <h3>Garden Controller App</h3>
-              <p>Developed an App Garden Controller this app can be used to control Motor and schedule Motor 
-              </p>
+              <p>Developed an App Garden Controller to control Motor and schedule it.</p>
             </div>
           </div>
           <div className="experience-card">
             <div className="experience-info">
-              <h3>Laundry Service Mobile Application
-              </h3>
+              <h3>Laundry Service Mobile Application</h3>
               <p>Built a cross-platform laundry service app with user and admin interfaces using Flutter and Dart.</p>
             </div>
           </div>
@@ -111,7 +125,7 @@ function Home() {
       </div>
 
       {/* Experiences Section */}
-      <div className="experiences-section">
+      <div className="experiences-section" id="experiences-section">
         <h2>My Experiences</h2>
         <div className="experience-card">
           <div className="experience-info">
@@ -122,7 +136,9 @@ function Home() {
         </div>
         {/* Add more experience cards as necessary */}
       </div>
-      <div className="contact-section">
+
+      {/* Contact Section */}
+      <div className="contact-section" id="contact-section">
         <h2>Contact Me</h2>
         <div className="contact-info">
           <p>Email: <a href="mailto:your-email@example.com">manishy0812@gmail.com</a></p>
