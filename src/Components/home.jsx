@@ -13,6 +13,17 @@ import './contact.css';
 import './Projects.css';
 
 function Home() {
+
+    const handleDownload = () => {
+      // Define the file path relative to the `public` folder
+      const filePath = `${process.env.PUBLIC_URL}/resume.pdf`;
+  
+      // Create a temporary anchor element for the download
+      const link = document.createElement('a');
+      link.href = filePath; // Set the href to the PDF path
+      link.download = 'resume.pdf'; // Specify the download filename
+      link.click(); // Programmatically click the anchor
+    };
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -66,7 +77,7 @@ function Home() {
         </p>
         <div className="buttons">
           <button className="button">Get In Touch</button>
-          <button className="button">Download CV</button>
+          <button onClick={handleDownload} className="button">Download CV</button>
         </div>
       </div>
 
@@ -170,5 +181,6 @@ function Home() {
     </div>
   );
 }
+
 
 export default Home;
