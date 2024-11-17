@@ -1,56 +1,69 @@
 .contact-section {
-    padding: 40px 0;
-    text-align: center;
-  }
-  
-  .contact-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .contact-info {
-    display: flex;
-    flex-direction: column; /* Align text vertically */
-    align-items: center; /* Centers the content horizontally */
-    justify-content: center; /* Centers the content vertically */
-  }
-  
-  .contact-info p {
-    font-size: 1.2rem;
-    margin: 10px 0;
-  }
-  
-  .contact-info a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .contact-info a:hover {
-    text-decoration: underline;
-  }
-  
-  .social-links {
-    margin-top: 20px;
-  }
-  
-  .social-links a {
-    margin: 0 10px;
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .social-links a:hover {
-    color: #FF6347; /* Color when hovering over icons */
-  }
-  
-  /* Optional: Styling for social media icons */
-  .social-links a svg {
-    transition: transform 0.3s ease;
-  }
-  
-  .social-links a:hover svg {
-    transform: scale(1.1); /* Slightly increase size on hover */
-  }
-  
+  padding: 40px 0;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column; /* Align text vertically */
+  align-items: center; /* Centers the content horizontally */
+  justify-content: center; /* Centers the content vertically */
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Add hover effect for contact paragraphs */
+.contact-info p:hover {
+  color: #FF6347; /* Change color on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.contact-info a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Add hover effect for links */
+.contact-info a:hover {
+  color: #FF6347; /* Change color on hover */
+  text-decoration: underline; /* Add underline on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for social links */
+.social-links a:hover {
+  color: #FF6347; /* Change color when hovering over icons */
+  transform: scale(1.2); /* Enlarge icon on hover */
+}
+
+/* Optional: Styling for social media icons */
+.social-links a svg {
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover svg {
+  transform: scale(1.3); /* Slightly increase size on hover */
+}
