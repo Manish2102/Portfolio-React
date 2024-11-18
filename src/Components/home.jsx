@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaAws, FaReact, FaPython, FaGithub, FaHtml5, FaLinkedin} from 'react-icons/fa';
+import { FaAws, FaReact, FaPython, FaGithub, FaHtml5, FaLinkedin } from 'react-icons/fa';
 import { BiLogoFlutter, BiLogoFlask } from "react-icons/bi";
 import { IoLogoCss3 } from "react-icons/io";
 import { FaXTwitter } from "react-icons/fa6";
@@ -14,16 +14,16 @@ import './Projects.css';
 
 function Home() {
 
-    const handleDownload = () => {
-      // Define the file path relative to the `public` folder
-      const filePath = `${process.env.PUBLIC_URL}/resume.pdf`;
-  
-      // Create a temporary anchor element for the download
-      const link = document.createElement('a');
-      link.href = filePath; // Set the href to the PDF path
-      link.download = 'resume.pdf'; // Specify the download filename
-      link.click(); // Programmatically click the anchor
-    };
+  const handleDownload = () => {
+    // Define the file path relative to the `public` folder
+    const filePath = `${process.env.PUBLIC_URL}/resume.pdf`;
+
+    // Create a temporary anchor element for the download
+    const link = document.createElement('a');
+    link.href = filePath; // Set the href to the PDF path
+    link.download = 'resume.pdf'; // Specify the download filename
+    link.click(); // Programmatically click the anchor
+  };
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -73,7 +73,7 @@ function Home() {
           Hey There <span>I'm Manish </span>I code and make <span>Things easier</span>
         </h1>
         <p>
-         I'm a software developer skilled in mobile and web development, with experience in building real-time systems for workplace safety, creating dynamic Flutter apps, and developing with React. I’m passionate about practical tech innovations and skilled in automation and data extraction.
+          I'm a software developer skilled in mobile and web development, with experience in building real-time systems for workplace safety, creating dynamic Flutter apps, and developing with React. I’m passionate about practical tech innovations and skilled in automation and data extraction.
         </p>
         <div className="buttons">
           <button className="button">Get In Touch</button>
@@ -141,6 +141,22 @@ function Home() {
             <div className="experience-info">
               <h3>Laundry Service Mobile Application</h3>
               <p>Built a cross-platform laundry service app with user and admin interfaces using Flutter and Dart.</p>
+            </div>
+          </div>
+          <div className="experience-card">
+            <div className="experience-info">
+              <h3>Web Scrapping Automation using selenium</h3>
+              <p>Automated data extraction from websites to streamline data collection
+                processes, saving significant manual effort and time.
+              </p>
+            </div>
+          </div>
+          <div className="experience-card">
+            <div className="experience-info">
+              <h3>Chatbot using Google Dialog flow</h3>
+              <p>Designed and implemented a chatbot using Google Dialog Flow on Google
+              Cloud Platform, enabling interactive and responsive user conversations.
+              </p>
             </div>
           </div>
         </div>
