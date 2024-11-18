@@ -73,7 +73,7 @@ function Home() {
           Hey There <span>I'm Manish </span>I code and make <span>Things easier</span>
         </h1>
         <p>
-         I’m a software developer skilled in mobile and web development, with experience in building real-time systems for workplace safety, creating dynamic Flutter apps, and developing with React. I’m passionate about practical tech innovations and skilled in automation and data extraction.
+         I'm a software developer skilled in mobile and web development, with experience in building real-time systems for workplace safety, creating dynamic Flutter apps, and developing with React. I’m passionate about practical tech innovations and skilled in automation and data extraction.
         </p>
         <div className="buttons">
           <button className="button">Get In Touch</button>
